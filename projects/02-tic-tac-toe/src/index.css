@@ -40,7 +40,7 @@ button {
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
-  font-size: 1em;
+  font-size: 1.2em;
   font-weight: 500;
   font-family: inherit;
   background-color: #1a1a1a;
@@ -151,12 +151,12 @@ button:focus-visible {
   left: 0;
   display: grid;
   place-items: center;
-  /* background-color: light-dark(darkgray, #213547); */
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(5px);
+  /* color: #ffffff; */
 }
 
 .winner .text {
-  background: light-dark(darkgray, #242424);
+  /* background: light-dark(darkgray, #242424); */
   height: 300px;
   width: 320px;
   border: 2px solid light-dark(#213547, #ffffff);
@@ -166,7 +166,8 @@ button:focus-visible {
   justify-content: center;
   align-items: center;
   gap: 20px;
-  backdrop-filter: blur(3px);
+  /* backdrop-filter: blur(3px); */
+  background-color: light-dark(#213547b5, #ffffff47);
 }
 
 .winner .win {

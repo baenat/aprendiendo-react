@@ -4,12 +4,21 @@ import { useState } from 'react';
 import { TURNS } from './constants/constants';
 import { Square } from './components/Square';
 import { WinnerModal } from './components/WinnerModal';
-import { checEndGame, checkWinner, congratulations } from './utils/board';
+import { checkEndGame, checkWinner, congratulations } from './utils/board';
+import { getItemFromStorage, resetGameStorage, saveGameToStorage } from './utils/storage';
 
 function App() {
 
-  const [board, setBoard] = useState(Array(9).fill(null));
-  const [turn, setTurn] = useState(TURNS.X);
+  const [board, setBoard] = useState(() => {
+    const boardFromStorage = getItemFromStorage('board');
+    return (boardFromStorage) ? JSON.parse(boardFromStorage) : Array(9).fill(null);
+  });
+
+  const [turn, setTurn] = useState(() => {
+    const turnFromStorage = getItemFromStorage('turn');
+    return turnFromStorage ?? TURNS.X;
+  });
+
   const [winner, setWinner] = useState(null);
 
   const updateBoard = (index) => {
@@ -23,12 +32,20 @@ function App() {
     const newTurn = turn === TURNS.X ? TURNS.O : TURNS.X;
     setTurn(newTurn);
 
+    // LocalStorage
+    saveGameToStorage(
+      {
+        board: newBoard,
+        turn: newTurn
+      }
+    );
+
     const newWinner = checkWinner(newBoard, turn);
 
     if (newWinner) {
       congratulations();
       setWinner(newWinner);
-    } else if (checEndGame(newBoard)) {
+    } else if (checkEndGame(newBoard)) {
       setWinner(false);
     }
   }
@@ -37,6 +54,8 @@ function App() {
     setBoard(Array(9).fill(null));
     setTurn(TURNS.X);
     setWinner(null);
+
+    resetGameStorage();
   }
 
   return (
