@@ -1,10 +1,25 @@
+import { TURNS } from '../constants/constants.js';
 import { Square } from './Square.jsx'
 
 export function WinnerModal({ winner, resetGame }) {
 
+  console.log(winner)
   if (winner === null) return null;
 
-  const winnerText = (winner === false) ? '¡EMPATE!' : '¡GANADOR!';
+  const winnerText = (!winner) ? '¡EMPATE!' : '¡GANADOR!';
+
+  const winnerRender = () => {
+
+    if (winner) {
+      return <Square>{winner}</Square>;
+    }
+
+    return <>
+      <Square> {TURNS.X} </Square>
+      <Square> {TURNS.O} </Square>
+    </>;
+
+  }
 
   return (
     <section className='winner'>
@@ -12,7 +27,7 @@ export function WinnerModal({ winner, resetGame }) {
         <h2>{winnerText}</h2>
 
         <header className='win'>
-          {winner && <Square>{winner}</Square>}
+          {winnerRender()}
         </header>
 
         <footer>

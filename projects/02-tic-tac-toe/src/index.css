@@ -152,7 +152,7 @@ button:focus-visible {
   display: grid;
   place-items: center;
   backdrop-filter: blur(5px);
-  /* color: #ffffff; */
+  color: light-dark(#ffffff, #ffffff);;
 }
 
 .winner .text {
@@ -167,13 +167,13 @@ button:focus-visible {
   align-items: center;
   gap: 20px;
   /* backdrop-filter: blur(3px); */
-  background-color: light-dark(#213547b5, #ffffff47);
+  background-color: light-dark(#213547b5, #5b585894);
 }
 
 .winner .win {
   margin: 0 auto;
   width: fit-content;
-  border: 2px solid light-dark(#213547, #ffffff);
+  border: 2px solid light-dark(#ffffff, #ffffff);
   border-radius: 10px;
   display: flex;
   gap: 15px;
