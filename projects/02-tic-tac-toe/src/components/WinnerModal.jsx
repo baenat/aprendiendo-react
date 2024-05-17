@@ -3,7 +3,6 @@ import { Square } from './Square.jsx'
 
 export function WinnerModal({ winner, resetGame }) {
 
-  console.log(winner)
   if (winner === null) return null;
 
   const winnerText = (!winner) ? '¡EMPATE!' : '¡GANADOR!';
