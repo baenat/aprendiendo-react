@@ -6,7 +6,7 @@
 
 </div>
 
-## ⌨️ Proyectos de React con código
+## ⌨️ Proyectos de React
 
 | Número | Proyecto | Código | Web |
 | --- | --- | --- | --- |
