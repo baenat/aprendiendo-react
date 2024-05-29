@@ -14,4 +14,4 @@
 | `02` | Tic Tac Toe | [Ver](projects/02-tic-tac-toe/) | [Visitar](https://triquis.surge.sh/) |
 | `03` | Mouse Following | [Ver](projects/03-mouse-follower/) | [Visitar](https://mouse-following.surge.sh/) |
 | `04` | Cats Phrase | [Ver](projects/04-react-prueba-tecnica/) | [Visitar](https://cat-phrase.surge.sh/) |
-| `05` | Search Movies | [Ver](projects/05-react-search-movies/) | [Visitar](https://movies.search.surge.sh/) |
+| `05` | Search Movies | [Ver](projects/05-react-search-movies/) | [Visitar](https://search-films.surge.sh/) |
