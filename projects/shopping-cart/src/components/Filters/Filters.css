@@ -1,0 +1,14 @@
+.filters {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.filters div {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: baseline;
+}
