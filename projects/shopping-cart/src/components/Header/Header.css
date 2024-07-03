@@ -1,0 +1,19 @@
+.header {
+  background-image: url('./../../assets/img/cart.webp');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  text-align: center;
+  background-color: rgba(0, 0, 0, .3);
+  padding: 8px 24px;
+  opacity: 0.9;
+  backdrop-filter: blur(9px);
+  border-radius: 10px;
+}
+
+.header h1 {
+  background-color: rgb(8 8 8 / 15%);
+  padding: 1rem;
+  backdrop-filter: blur(2px);
+}

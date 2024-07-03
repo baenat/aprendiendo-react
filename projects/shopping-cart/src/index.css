@@ -4,16 +4,9 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  background: #614385;
-  background: -webkit-linear-gradient(to right, #516395, #614385);
-  background: linear-gradient(to right, #516395, #614385);
-
-
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background: #003973;
+  background: -webkit-linear-gradient(to bottom left, #E5E5BE, #003973);
+  background: linear-gradient(to bottom left, #E5E5BE, #003973);
 }
 
 a {
@@ -28,8 +21,6 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
