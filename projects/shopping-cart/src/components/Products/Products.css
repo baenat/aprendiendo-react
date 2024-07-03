@@ -2,7 +2,6 @@
   width: 100%;
   display: flex;
   place-content: center;
-  transition: all 3ms ease-in-out;
 }
 
 .products ul {
@@ -12,8 +11,6 @@
 
   list-style: none;
   padding: 0;
-
-  transition: all 3ms ease-in-out;
 }
 
 /* .products ul li img {
@@ -31,7 +28,6 @@
   padding: 0.5rem;
 
   backdrop-filter: blur(10px);
-  transition: all 3ms ease-in-out;
 }
 
 .products h3 {
@@ -54,6 +50,7 @@
 
 .products li:hover {
   transform: translateY(-10px);
+  transition: all 10ms ease-in-out;
 }
 
 /* .products:has(:hover) li:not(:hover) {

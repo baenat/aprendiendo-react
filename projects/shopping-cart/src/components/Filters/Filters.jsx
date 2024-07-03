@@ -32,8 +32,8 @@ export function Filters ({ onChange }) {
         <label htmlFor='price'>Categoría</label>
         <select name='category' id='category' onChange={handleCategory}>
           <option value='all'>Todas</option>
-          <option value='laptos'>Portátiles</option>
-          <option value='smartphone'>Celulares</option>
+          <option value='laptops'>Portátiles</option>
+          <option value='smartphones'>Celulares</option>
         </select>
       </div>
 
